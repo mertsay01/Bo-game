@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>Memory Game</title>
+</head>
+<body>
+  <div class="game-container" id="game-container">
+    <h1>Memory Game</h1>
+    <div class="scoreboard" id="scoreboard">
+      <div id="player1" class="player-score active">Speler 1: <span id="player1-score">0</span></div>
+      <div id="player2" class="player-score">Speler 2: <span id="player2-score">0</span></div>
+    </div>
+    <div class="game-board" id="game-board"></div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+    <p class="result-message" id="result-message"></p>
+    <button onclick="restartGame()">Speel Opnieuw</button>
+  </div>
+</body>
+</html>
